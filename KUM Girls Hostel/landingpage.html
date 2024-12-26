@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Kohsar University Murree - Girls Hostel Portal</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f8ff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 229, 255, 0.409);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+/* Main Styles */
+main {
+    padding: 20px 0;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#home {
+    background: url('pages/img/cover.jpg') no-repeat center center/cover;
+    color: #000000;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+#home button {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#home button:hover {
+    background-color: #ff6347;
+}
+
+/* About Section */
+#about {
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Services Section */
+#services {
+    background-color: #e6f7ff;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #1e90ff;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Facilities Section */
+#facilities {
+    background-color: #f0f8ff;
+}
+
+#facilities h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.facility-item {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.facility-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #1e90ff;
+}
+
+.facility-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff6347;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="landingpage.html"><img src="pages/img/logo.png" alt="KUM Logo"><p><b>KUM Girls Hostel</b></p></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="pages/adminlogin.php">Login As Admin</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>Welcome to Kohsar University Murree Girls Hostel Portal</h1>
+                <p>Your comfort and security is our priority.</p>
+                <button onclick="window.location.href='pages/login.php'">Login</button>
+                <button onclick="window.location.href='pages/register.php'">Sign Up</button>
+            </div>
+        </section>
+    
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Kohsar University Murree offers a state-of-the-art hostel facility for girls, ensuring a safe, comfortable, and conducive living environment for academic and personal growth.</p>
+            </div>
+        </section>
+    
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-item">
+                    <h3>24/7 Security</h3>
+                    <p>Ensuring a safe environment for all residents with round-the-clock security services.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Housekeeping</h3>
+                    <p>Regular housekeeping services to maintain cleanliness and hygiene in the hostel.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Meal Plans</h3>
+                    <p>Nutritious and delicious meal plans catered to the needs of our residents.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="facilities">
+            <div class="container">
+                <h2>Facilities</h2>
+                <div class="facility-item">
+                    <h3>Wi-Fi Connectivity</h3>
+                    <p>High-speed internet access available throughout the hostel.</p>
+                </div>
+                <div class="facility-item">
+                    <h3>Study Rooms</h3>
+                    <p>Quiet and comfortable study rooms for uninterrupted academic work.</p>
+                </div>
+                <div class="facility-item">
+                    <h3>Recreational Area</h3>
+                    <p>A common area for recreational activities and socializing with fellow students.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need more information, please contact us at:</p>
+                <p>Email: info@kum.edu.pk</p>
+                <p>Phone: +92 123 4567890</p>
+                <p>Address: Kohsar University Murree, Murree, Pakistan</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kohsar University Murree. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

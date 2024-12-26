@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f8ff;
+    
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 229, 255, 0.409);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+/* Main Styles */
+main {
+    padding: 20px 0;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#home {
+    background: url('pages/img/cover.jpg') no-repeat center center/cover;
+    color: #000000;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+#home button {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#home button:hover {
+    background-color: #ff6347;
+}
+
+/* About Section */
+#about {
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Services Section */
+#services {
+    background-color: #e6f7ff;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #1e90ff;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Facilities Section */
+#facilities {
+    background-color: #f0f8ff;
+}
+
+#facilities h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.facility-item {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.facility-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #1e90ff;
+}
+
+.facility-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff6347;
+}
